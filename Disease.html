@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Disease Detection System</h1>
+        <form id="diseaseForm" action="DetectDiseaseServlet" method="post">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+            </select>
+            
+            <label for="bmi">BMI:</label>
+            <input type="number" id="bmi" name="bmi" step="0.1" required>
+            
+            <label for="blood_pressure">Blood Pressure:</label>
+            <input type="number" id="blood_pressure" name="blood_pressure" required>
+            
+            <label for="cholesterol">Cholesterol:</label>
+            <input type="number" id="cholesterol" name="cholesterol" required>
+            
+            <label for="glucose">Glucose:</label>
+            <input type="number" id="glucose" name="glucose" step="0.1" required>
+            
+            <label for="exercise">Exercise (times per week):</label>
+            <input type="number" id="exercise" name="exercise" required>
+            
+            <label for="smoking">Smoking (yes=1, no=0):</label>
+            <input type="number" id="smoking" name="smoking" required>
+            
+            <label for="family_history">Family History (yes=1, no=0):</label>
+            <input type="number" id="family_history" name="family_history" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
